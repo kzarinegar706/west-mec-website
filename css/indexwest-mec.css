@@ -1,0 +1,289 @@
+@media only screen and (min-width: 1200px) {
+
+   body{
+       background-color: rgb(248, 158, 39);
+       transition: 1s;
+       height: 91em;
+   }
+
+   header > a > h1:hover{
+       color: white;
+   }
+
+   @font-face {
+        font-family: 'font';
+        src: url('fonts/CENTURIES.ttf');
+       }
+
+   header > a > h1{
+       font-family: 'font';
+       position: absolute;
+       top: 0em;
+       left: 3.5em;
+       font-size: 300%;
+   }
+
+   header > h2{
+       position: absolute;
+       top: 3.5em;
+       left: 3.5em;
+   }
+   
+   header > img{
+       height: 4em;
+       border-radius: 50px;
+       position: absolute;
+       top: 10px;
+   }
+
+   .icon > img{
+    -ms-transform: translate(80px, 0px);
+    -webkit-transform: translate(80px, 0px);
+    transform: translate(80px, 0px);
+    transition: 2s;
+   }
+
+   div > img{
+       opacity: 0.5;
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       height: 10em;
+       width: 96em;
+   }
+
+   aside > img{
+    width: 28em;
+    height: 9em;
+    -ms-transform: translate(55em, 0px);
+    -webkit-transform: translate(55em, 0px);
+    transform: translate(55em, 0px);
+    transition: 2s;
+    filter: brightness(90%);
+   }
+
+   li:hover{
+       color: white;
+   }
+
+   li > a:hover{
+       color: white;
+   }
+
+   div > ul{
+    position: absolute;
+    top: 7em;
+    left: 50em;
+    width: 40em;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: flex-end;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+}
+
+   
+
+   li{
+    text-align: left;
+    color: black;
+    float: left;
+    display: block;
+    margin: .5em;
+    padding: .5em;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+   ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+   }
+
+   ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       width: 200px;
+       top: -18px;
+       left: -100px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+
+   }
+
+   ul li ul li{
+       clear: both;
+       width: 75%;
+   }
+
+   .flex1{
+    order: 1;
+    margin: .5em;
+    padding: .5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+}
+
+   i{
+       border: solid black;
+       border-width: 0 3px 3px 0;
+       display: inline-block;
+       padding: 2px;
+       margin: 3px;
+   }
+   .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .mid > img{
+    display: block;
+    position: absolute;
+    left: 0em;
+    width: 90em;
+    top: 10em;
+    opacity: 1;
+    height: 40em;
+    border-right: black 55px solid;
+    border-left:black 40px solid;
+  }
+
+  .black > img{
+    position: absolute;
+    top: 20em;
+    left: 52.5em;
+    height: 30em;
+    width: 40em;
+  }
+
+  .right > img{
+    position: absolute;
+    top: 37em;
+    width: 20em;
+    left: 70em;
+    opacity: 1;
+    filter: brightness(120%);
+  }
+
+  footer > p{
+      bottom: -15px;
+      position: fixed;
+      left: 0;
+      width: 100em;
+      background-color: black;
+      color: white;
+      text-align: center;
+  }
+
+  footer{
+      bottom: 0px;
+  }
+
+  .insta > h1{
+      position: absolute;
+      top: 25em;
+      right: 7em;
+      float: right;
+      filter: brightness(120%);
+      color: rgb(94, 90, 90);
+  }
+
+  .insta > a > img{
+      position: absolute;
+      top: 55em;
+      width: 70px;
+      right: 25em;
+  }
+
+  .insta > a > img:hover{
+      filter: brightness(200%);
+  }
+
+  .facebook > a > img{
+    position: absolute;
+    top: 55em;
+    width: 70px;
+    right: 17em;
+}
+
+  .facebook > a > img:hover{
+    filter: brightness(200%);
+}
+
+.twitter > a > img{
+    position: absolute;
+    top: 55em;
+    width: 80px;
+    right: 9em;
+}
+
+.twitter > a > img:hover{
+    filter: brightness(150%);
+}
+
+.sub > p{
+    position: absolute;
+    top: 35em;
+    left: 5em;
+    width: 30em;
+    font-size: 150%;
+    height: 10em;
+    background: none;
+    color: black;
+}
+
+.info > p{
+    position: absolute;
+    top: 40em;
+    left: 43em;
+    width: 15em;
+    font-size: 150%;
+    color: black;
+}
+
+.info > p > a:hover{
+    color: white;
+}
+
+.fbla > img{
+    position: absolute;
+    width: 25em;
+    height: 15em;
+    top: 75em;
+}
+
+.arrow > img{
+    position: absolute;
+    left: 43em;
+    top: 77em;
+    width: 12em;
+    height: 12em;
+}
+
+.fccla > img{
+    position: absolute;
+    width: 19em;
+    height: 15em;
+    left: 70em;
+    top: 75em;
+}
+
+.code{
+    text-align: center;
+}
+
+}
